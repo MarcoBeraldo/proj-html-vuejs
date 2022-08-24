@@ -15,5 +15,23 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.wwd-card {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  text-align: center;
+
+  h3 {
+    font-weight: 700;
+  }
+
+  img {
+    width: 150px;
+    margin-bottom: 50px;
+  }
+}
 </style>
