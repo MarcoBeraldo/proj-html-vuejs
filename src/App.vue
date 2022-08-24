@@ -24,10 +24,11 @@ export default {
 </script>
 
 <style lang="scss">
-@import "assets/sass/style.scss";
+@import "./assets/sass/style.scss";
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 </style>

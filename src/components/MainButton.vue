@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input class="btn" type="button" :value="BtnText" />
+    <button type="button" class="btn btn-primary mx-3">Sign Up</button>
   </div>
 </template>
 
@@ -9,4 +9,7 @@ export default {};
 </script>
 
 <style lang="scss">
+@import "../assets/sass/style.scss";
+button {
+}
 </style>
