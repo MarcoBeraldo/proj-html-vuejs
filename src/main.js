@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons";
 import { faLeftLong } from "@fortawesome/free-solid-svg-icons";
 import { faRightLong } from "@fortawesome/free-solid-svg-icons";
-import { faRight } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn as faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -21,8 +20,7 @@ library.add(
   faFacebook,
   faTwitter,
   faLeftLong,
-  faRightLong,
-  faRight
+  faRightLong
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
