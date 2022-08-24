@@ -6,7 +6,7 @@
           <h2 class="text-white display-4 fw-bold">Business Planning</h2>
           <h3 class="text-white display-4">Digital Technology</h3>
           <h2 class="text-white display-4 fw-bold">Modern Solution!</h2>
-          <p>
+          <p class="mb-3">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
             quaerat repellat ipsa quasi repellendus ratione tempora
           </p>
