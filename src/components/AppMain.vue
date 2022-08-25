@@ -10,6 +10,7 @@
             quia illum nisi rem?
           </p>
         </div>
+
         <div class="card-container d-flex justify-content-between">
           <WwdCard
             v-for="(activityCard, index) in activityCards"
@@ -19,10 +20,19 @@
             :text="activityCard.text"
           />
         </div>
+
         <div class="button">
           <MainButton />
         </div>
       </div>
+    </section>
+
+    <section id="grow">
+      <MainJumbotron />
+    </section>
+
+    <section id="slider">
+      <MainSlider />
     </section>
   </main>
 </template>
@@ -30,9 +40,12 @@
 <script>
 import WwdCard from "./WwdCard.vue";
 import MainButton from "./MainButton.vue";
+import MainJumbotron from "./MainJumbotron.vue";
+import MainSlider from "./MainSlider.vue";
 import activityCards from "../assets/data/activityCards.js";
+
 export default {
-  components: { WwdCard, MainButton },
+  components: { WwdCard, MainButton, MainJumbotron, MainSlider },
   name: "AppMain",
   data() {
     return { activityCards };
@@ -52,6 +65,9 @@ h2 {
 .button {
   margin: 150px 0;
   display: flex;
-  justify-content: center;
+  justify-content: center nbhgvfcdx;
+}
+#grow {
+  background-image: linear-gradient(to bottom, $dark_blue, $night_blue);
 }
 </style>
