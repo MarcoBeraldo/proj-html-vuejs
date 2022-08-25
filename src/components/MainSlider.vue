@@ -12,22 +12,24 @@
       @click="isLast ? (activeIndex = 0) : activeIndex++"
     ></i>
 
-    <SliderCard
-      v-for="(img, i) in sliderImages"
-      :key="i"
-      :title="img.title"
-      :text="img.text"
-      :image="img.image"
-      :activeClass="activeIndex === i ? 'item active' : 'item'"
-    />
-
-    <div id="thumbnail">
-      <img
+    <div class="d-flex justify-content-center my-5">
+      <SliderCard
         v-for="(img, i) in sliderImages"
         :key="i"
-        :activeClass="activeIndex === i ? 'thumb active' : 'thumb'"
-        @click="setActive(i)"
+        :title="img.title"
+        :text="img.text"
+        :image="img.image"
+        :activeClass="activeIndex === i ? 'item active' : 'item'"
       />
+    </div>
+
+    <div id="thumbnail" class="d-flex justify-content-center">
+      <div
+        class="dot"
+        v-for="(img, i) in sliderImages"
+        :key="i"
+        @click="setCentral()"
+      ></div>
     </div>
   </div>
 </template>
@@ -43,7 +45,7 @@ export default {
       sliderImages,
     };
   },
-  components: SliderCard,
+  components: { SliderCard },
   computed: {
     isFirst() {
       return this.activeIndex === 0;
@@ -57,9 +59,21 @@ export default {
     setActive(index) {
       this.activeIndex = index;
     },
+    setCentral(index) {
+      this.activeIndex = index;
+      return (this.activeIndex += 1);
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
+.dot {
+  display: block;
+  margin: 0 1em;
+  width: 1em;
+  height: 1em;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+}
 </style>

@@ -1,0 +1,2 @@
+colorare i bottoni
+mettere la prima parola in grassetto nelle card dei prezzi

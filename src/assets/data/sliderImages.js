@@ -24,4 +24,9 @@ export default [
     title: "Purinky Products",
     text: "Branding Strategy",
   },
+  {
+    image: require("../img/slider-2.jpg"),
+    title: "Satisfy Poster",
+    text: "Branding Strategy",
+  },
 ];
