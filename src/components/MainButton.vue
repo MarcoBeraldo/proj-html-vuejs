@@ -10,6 +10,4 @@ export default {};
 
 <style lang="scss">
 @import "../assets/sass/style.scss";
-button {
-}
 </style>
