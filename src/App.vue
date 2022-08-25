@@ -2,20 +2,21 @@
   <div id="app">
     <AppHeader />
     <AppMain />
+    <AppFooter />
   </div>
 </template>
 
 <script>
 import AppHeader from "/src/components/AppHeader.vue";
 import AppMain from "/src/components/AppMain.vue";
-// import AppFooter from "/src/components/AppFooter.vue";
+import AppFooter from "/src/components/AppFooter.vue";
 
 export default {
   name: "App",
   components: {
     AppHeader,
     AppMain,
-    //  AppFooter
+    AppFooter,
   },
   data() {
     return {};

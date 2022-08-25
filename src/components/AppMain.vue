@@ -32,7 +32,7 @@
     </section>
 
     <section id="slider">
-      <ProvaSlider />
+      <MainSlider />
     </section>
 
     <section id="pricing">
@@ -68,12 +68,12 @@ import PriceCard from "./PriceCard.vue";
 import WwdCard from "./WwdCard.vue";
 import MainButton from "./MainButton.vue";
 import MainJumbotron from "./MainJumbotron.vue";
-import ProvaSlider from "./ProvaSlider.vue";
+import MainSlider from "./MainSlider.vue";
 import activityCards from "../assets/data/activityCards.js";
 import pricings from "../assets/data/pricings.js";
 
 export default {
-  components: { WwdCard, MainButton, MainJumbotron, ProvaSlider, PriceCard },
+  components: { WwdCard, MainButton, MainJumbotron, MainSlider, PriceCard },
   name: "AppMain",
   data() {
     return { activityCards, pricings };
@@ -94,13 +94,15 @@ h2 {
 .button {
   margin: 150px 0;
   display: flex;
-  justify-content: center nbhgvfcdx;
+  justify-content: center;
 }
 #grow {
   background-image: linear-gradient(to bottom, $dark_blue, $night_blue);
+  padding: 30px;
 }
 #slider {
   overflow: hidden;
+  padding: 30px;
 }
 
 #pricing {

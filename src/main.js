@@ -23,7 +23,7 @@ library.add(
   faRightLong
 );
 
-Vue.component("font-awesome-icon", FontAwesomeIcon);
+Vue.component("FontAwesomeIcon", FontAwesomeIcon);
 Vue.config.productionTip = false;
 
 new Vue({
